@@ -178,7 +178,7 @@ We would get this behavior..
 instanceof PersonTwo === Person
 instanceof PersonTwo !== PersonTwo
 ```
-This is not behavior we want.
+This is not behavior we want, the constructor for PersonTwo should be PersonTwo, not Person.
 
 ## So, in doing...
 ```
