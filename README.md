@@ -164,7 +164,8 @@ When creating the Subclass, we destroyed the original prototype when we call
 PersonTwo.prototype = Object.create(Person.prototype);
 ```
 
-As we are assinging the prototype to a Object built from the Person prototype...
+As we are assinging the prototype to a Object built from the Person prototype,
+we are also reassigning PersonTwos constructor to be Person and not PersonTwo
 
 ```
 PersonTwo.prototype.constuctor
