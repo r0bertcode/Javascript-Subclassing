@@ -5,7 +5,7 @@
 
 To demonstrate this topic, I will be using a short example of Person(Superclass) one and PersonTwo(Subclass), code is in code.js
 
-The *_Superclass_*, also refered to as the *_Parentclass_* is the Class that Supersedes the following *_Subclasses_*.
+The *_Superclass_*, also refered to as the *_Parentclass_* is the Class that Supersedes the following *_Subclass_*.
 <br></br>
 
 ## Building the Superclass
@@ -165,7 +165,7 @@ PersonTwo.prototype = Object.create(Person.prototype);
 ```
 
 As we are assinging the prototype to a Object built from the Person prototype,
-we are also reassigning PersonTwos constructor to be Person and not PersonTwo
+we are also reassigning PersonTwos constructor to be Person and not PersonTwo.
 
 ```
 PersonTwo.prototype.constuctor
