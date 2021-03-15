@@ -209,4 +209,16 @@ We are using the function that lives on the protoype of Person, and calling it i
 Again, we need to pass in the item paramter as it is required to push an item to the backpack array, otherwise we would just be pushing undefined to our backpack.
 
 
+## Resulting in functionality like..
+
+```
+let personOne = new Person(99);
+personOne.addItem('Hello');
+// personOne => Person { backpack: [ 'Hello' ], age: 99 }
+
+let personTwo = new PersonTwo(14);
+personTwo.addItem('World!');
+// personTwo => PersonTwo { backpack: [ 'World!' ], age: 14 }
+```
+
 ## And thats it! Go become Subclassing Masters
