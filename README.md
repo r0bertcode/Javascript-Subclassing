@@ -173,6 +173,7 @@ Is Equal to ----> Person
 ```
 
 What if we wanted to call instanceof on an instance of the PersonTwo class?
+We would get this behavior..
 ```
 instanceof PersonTwo === Person
 instanceof PersonTwo !== PersonTwo
