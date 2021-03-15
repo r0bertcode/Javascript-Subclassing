@@ -49,9 +49,6 @@ const PersonTwo = function(age) {
 PersonTwo.prototype = Object.create(Person.prototype);
 PersonTwo.prototype.constructor = PersonTwo;
 
-PersonTwo.prototype.addItem = function(item) {
-  Person.prototype.addItem.call(this, item);
-}
 ```
 
 ### Whoa, what's going on here?
@@ -192,23 +189,6 @@ PersonTwo.prototype.constructor = PersonTwo;
 </ul>
 
 And wha-la, you have correctly structured the prototype of your Subclass!
-
-## Extending functionality
-
-```
-PersonTwo.prototype.addItem = function(item) {
-  Person.prototype.addItem.call(this, item);
-}
-```
-
-Finally, how would we call the addItem function from the Superclass Person, on an instance of a PersonTwo Subclass?
-
-Much like inheriting properties, we can use the call method to make a call of the addItem function from the Person prototype.
-
-We are using the function that lives on the protoype of Person, and calling it in ' this ' context or the context of PersonTwo.
-
-Again, we need to pass in the item paramter as it is required to push an item to the backpack array, otherwise we would just be pushing undefined to our backpack.
-
 
 ## Resulting in functionality like..
 

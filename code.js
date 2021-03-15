@@ -19,11 +19,6 @@ const PersonTwo = function(age) {
 PersonTwo.prototype = Object.create(Person.prototype);
 PersonTwo.prototype.constructor = PersonTwo;
 
-PersonTwo.prototype.addItem = function(item) {
-  Person.prototype.addItem.call(this, item);
-};
-
-
 /// Example //
 
 let personOne = new Person(99);
