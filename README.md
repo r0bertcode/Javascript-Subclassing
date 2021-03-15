@@ -168,7 +168,7 @@ As we are assinging the prototype to a Object built from the Person prototype...
 
 ```
 PersonTwo.prototype.constuctor
-Equal to ----> Person
+Is Equal to ----> Person
 ```
 
 What if we wanted to call instanceof on an instance of the PersonTwo class?
